@@ -1,0 +1,64 @@
+<div class="container pt-5">
+	<div class="row">
+		<div class="col"></div>
+		<div class="col-6">
+			<div class="card">
+				<div class="card-header text-center">Buyer SignUp</div>
+				<div class="card-body">
+					<form action="">
+
+						<div class="row">
+							<div class="col">
+								<div class="Form-group mx-2 my-3">
+									<label for="username">USERNAME</label>
+									<input type="text" class="form-control" id="username" [(ngModel)]="buyer.username" placeholder="username"
+										name="username">
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col">
+								<div class="Form-group mx-2 my-3">
+									<label for="password">PASSWORD</label>
+									<input type="password" class="form-control" id="pass" [(ngModel)]="buyer.password" placeholder="password"
+										name="password">
+								</div>
+							</div>
+							
+						<div class="row">
+							<div class="col">
+								<div class="Form-group mx-2 my-3">
+									<label for="email">EMAILID</label>
+									<input type="text" class="form-control" id="EmailID" [(ngModel)]="buyer.email" placeholder="email"
+										name="email">
+								</div>
+							</div>
+							<div class="col">
+								<div class="Form-group mx-2 my-3">
+									<label for="mobile">MOBILE</label>
+									<input type="text" class="form-control" id="mobile" [(ngModel)]="buyer.mobile" placeholder="mobile"
+										name="mobile">
+								</div>
+							</div>
+						</div>
+
+						<div class="col">
+							<div class="Form-group mx-2 my-3">
+								<label for="date">Date</label>
+								<input type="text" class="form-control" id="date" [(ngModel)]="buyer.date" placeholder="date"
+									name="date">
+							</div>
+						</div>
+					</div>
+ 
+						<button type="submit" class="btn btn-primary float-right" (click)="addBuyer()" >Register</button>
+
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+		</div>
+	</div>
+</div>
